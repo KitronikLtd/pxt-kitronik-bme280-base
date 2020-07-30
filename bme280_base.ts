@@ -60,7 +60,7 @@ namespace kitronik_BME280 {
     export const DIG_H6 = getInt8LE(0xE7)
 	
 	//List of different temperature units
-    export export enum TemperatureUnitList {
+    export enum TemperatureUnitList {
         //% block="°C"
         C,
         //% block="°F"
@@ -68,7 +68,7 @@ namespace kitronik_BME280 {
     }
 
 	//List of different pressure units
-    export export enum PressureUnitList {
+    export enum PressureUnitList {
         //% block="Pa"
         Pa,
         //% block="mBar"
