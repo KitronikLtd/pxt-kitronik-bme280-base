@@ -76,16 +76,16 @@ namespace kitronik_BME280 {
     }
 
 	//Global variables used for storing one copy of value, these are used in multiple locations for calculations
-    let initalised = false
-    let measurementsBuf = pins.createBuffer(8)
+    export let initalised = false
+    export let measurementsBuf = pins.createBuffer(8)
 
-    let temperatureReading = 0		// calculated readings of sensor parameters from raw adc readings
-    let pressureReading = 0
-    let humidityReading = 0
+    export let temperatureReading = 0		// calculated readings of sensor parameters from raw adc readings
+    export let pressureReading = 0
+    export let humidityReading = 0
 
-    let adcRawTemperature = 0       //adc reading of raw temperature
-    let adcRawPressure = 0       //adc reading of raw pressure
-    let adcRawHumidity = 0       //adc reading of raw humidity
+    export let adcRawTemperature = 0       //adc reading of raw temperature
+    export let adcRawPressure = 0       //adc reading of raw pressure
+    export let adcRawHumidity = 0       //adc reading of raw humidity
 
 
 	/* secretIncantation function is only called once at the beginning in order to set up the BME280 sensor.
