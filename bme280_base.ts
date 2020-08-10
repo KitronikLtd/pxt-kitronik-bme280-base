@@ -118,7 +118,7 @@ namespace kitronik_BME280 {
     }
 
     // blockId="pressure_units" block="%press_units"
-    export function pressureUnits(press_units: TemperatureUnitList): string {
+    export function pressureUnits(press_units: PressureUnitList): string {
     	switch(press_units) {
     		case PressureUnitList.Pa: return "Pa";
     		case PressureUnitList.mBar: return "mBar";
