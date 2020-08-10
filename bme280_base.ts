@@ -109,7 +109,22 @@ namespace kitronik_BME280 {
         initalised = true
     }
 
-	
+    // blockId="temperature_units" block="%temp_units"
+    export function temperatureUnits(temp_units: TemperatureUnitList): string {
+    	switch(temp_units) {
+    		case TemperatureUnitList.C: return "°C";
+    		case TemperatureUnitList.F: return "°F";
+    	}
+    }
+
+    // blockId="pressure_units" block="%press_units"
+    export function pressureUnits(press_units: TemperatureUnitList): string {
+    	switch(press_units) {
+    		case PressureUnitList.Pa: return "Pa";
+    		case PressureUnitList.mBar: return "mBar";
+    	}
+    }
+
 	/*readRawReadings reads all registers to do with measurements from the BME280 chip .
 	* Once all bytes are collated, the required bytes are shifted left or right depending if it was most or least significate bites.
 	* At the end of the fuction, there are three globals with the raw readings of temperature, pressure and humidity.
