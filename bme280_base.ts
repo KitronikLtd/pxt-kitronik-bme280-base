@@ -2,6 +2,23 @@
  * Kitronik BME280 Blocks
  * Sensor Chip: BME280
  */
+ 
+ 	//List of different temperature units
+    export enum TemperatureUnitList {
+        //% block="°C"
+        C,
+        //% block="°F"
+        F
+    }
+
+	//List of different pressure units
+    export enum PressureUnitList {
+        //% block="Pa"
+        Pa,
+        //% block="mBar"
+        mBar
+    }
+ 
 namespace kitronik_BME280 {
 
 	//Useful BME280 constants
@@ -58,22 +75,6 @@ namespace kitronik_BME280 {
     export const DIG_H4 = (getInt8BE(0xE4) << 4) + (DIG_H4_LSB_DIG_H5_MSB % 16)
     export const DIG_H5 = (getInt8BE(0xE6) << 4) + (DIG_H4_LSB_DIG_H5_MSB >> 4)
     export const DIG_H6 = getInt8LE(0xE7)
-	
-	//List of different temperature units
-    export enum TemperatureUnitList {
-        //% block="°C"
-        C,
-        //% block="°F"
-        F
-    }
-
-	//List of different pressure units
-    export enum PressureUnitList {
-        //% block="Pa"
-        Pa,
-        //% block="mBar"
-        mBar
-    }
 
 	//Global variables used for storing one copy of value, these are used in multiple locations for calculations
     export let initalised = false
