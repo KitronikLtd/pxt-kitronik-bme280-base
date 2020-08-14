@@ -4,7 +4,7 @@
  */
  
  	//List of different temperature units
-    export enum TemperatureUnitList {
+    enum TemperatureUnitList {
         //% block="°C"
         C,
         //% block="°F"
@@ -12,7 +12,7 @@
     }
 
 	//List of different pressure units
-    export enum PressureUnitList {
+    enum PressureUnitList {
         //% block="Pa"
         Pa,
         //% block="mBar"
