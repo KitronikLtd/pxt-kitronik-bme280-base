@@ -3,8 +3,10 @@
  * Sensor Chip: BME280
  */
  
+namespace kitronik_BME280 {
+    
  	//List of different temperature units
-    enum TemperatureUnitList {
+    export enum TemperatureUnitList {
         //% block="°C"
         C,
         //% block="°F"
@@ -12,15 +14,13 @@
     }
 
 	//List of different pressure units
-    enum PressureUnitList {
+    export enum PressureUnitList {
         //% block="Pa"
         Pa,
         //% block="mBar"
         mBar
     }
- 
-namespace kitronik_BME280 {
-
+    
 	//Useful BME280 constants
 	export const CHIP_ADDRESS = 0x76
 	export const CONTROL_HUMIDITY_REG = 0xF2
