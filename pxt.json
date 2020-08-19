@@ -1,6 +1,6 @@
 {
     "name": "pxt-kitronik-bme280-base",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "description": "Base code for BME280 Sensor used on Kitronik Products",
     "license": "MIT",
     "dependencies": {
