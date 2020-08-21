@@ -4,8 +4,7 @@
  */
  
 namespace kitronik_BME280 {
-    
- 	//List of different temperature units
+   	//List of different temperature units
     export enum TemperatureUnitList {
         //% block="°C"
         C,
